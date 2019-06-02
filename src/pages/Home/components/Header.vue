@@ -4,7 +4,7 @@
       <i class="iconfont icon-zuojiantou"></i>
       <input type="text" class="header-input iconfont" 
       :placeholder="'\ue62d 输入城市/景点/游玩主题'"/>
-      <span class="city">城市<i class="iconfont icon-sanjiaodown"></i></span>
+      <router-link to="/city" class="city">深圳<i class="iconfont icon-sanjiaodown"></i></router-link>
     </div>
   </div>
 </template>
