@@ -4,12 +4,14 @@
       <i class="iconfont icon-zuojiantou"></i>
       <input type="text" class="header-input iconfont" 
       :placeholder="'\ue62d 输入城市/景点/游玩主题'"/>
-      <router-link to="/city" class="city">深圳<i class="iconfont icon-sanjiaodown"></i></router-link>
+      <router-link to="/city" class="city">{{ this.city }}
+      <i class="iconfont icon-sanjiaodown"></i></router-link>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   data () {
     return {
@@ -17,6 +19,9 @@ export default {
     }
   },
   components: {
+  },
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
@@ -31,23 +36,23 @@ export default {
     justify-content: space-between;
     line-height: $headerHeight;
     .icon-zuojiantou{
-      font-size: .40rem;
+      font-size: .4rem;
       font-weight: bold;
+      width: .7rem;
     }
     .icon-zuojiantou, .city{
       display: inline-block;
-      width: .7rem;
       height: $headerHeight;
       text-align: center;
       color: #fff;
     }
     .city{
-      width: 1.2rem;
-      vertical-align: middle;
-      margin-left: 0.15rem;
+      min-width: 1rem;
+      padding: 0 .1rem;
+      text-align: center;
       .icon-sanjiaodown{
         font-size: .28rem;
-        margin-left: 0.15em;
+        margin-left: -0.15em;
       }
     }
     .header-input{

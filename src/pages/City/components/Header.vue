@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <span class="back">
+    <router-link to="/" tag="span" class="back">
       <i class="iconfont icon-zuojiantou"></i>
-    </span>
+    </router-link>
     城市选择
   </div>
 </template>

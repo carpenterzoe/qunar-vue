@@ -1,23 +1,23 @@
 <template>
   <div class="alphabet-container">
     <ul>
-      <li>A</li>
-      <li>B</li>
-      <li>C</li>
-      <li>C</li>
-      <li>C</li>
-      <li>C</li>
-      <li>C</li>
-      <li>C</li>
+      <li v-for="(value, name, index) in cities" 
+      :key="index" @click="cityFilter">{{ name }}</li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['cities'],
   data() {
     return {
 
+    }
+  },
+  methods: {
+    cityFilter(e){
+      this.$emit('cityFilter', e.target.innerText)
     }
   },
   components: {
