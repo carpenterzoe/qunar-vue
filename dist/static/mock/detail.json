@@ -1,0 +1,44 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "南昌万达主题乐园",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1610/83/83a873f755d64992a3.water.jpg_600x330_9d4add39.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1610/8a/8ad4be817b77900a3.water.jpg_r_800x800_d0bec6ba.jpg", "http://img1.qunarzz.com/sight/p0/1610/38/38f40e60221bed6da3.water.jpg_r_800x800_f010c716.jpg","http://img1.qunarzz.com/sight/p0/1610/8e/8e2920d905f457dca3.water.jpg_r_800x800_1365d61b.jpg"],
+    "categoryList": [
+      {
+        "title": "全天票/暑期高峰",
+        "children": [
+          {
+            "title": "【高峰】成人票【全天票-随订随进】",
+            "children": [
+              {
+                "title": "南昌万达主题乐园全天成人票"
+              }
+            ]
+          },
+          {
+            "title": "成人三馆联票"
+          }
+        ]
+      },
+      {
+        "title": "优惠人群票",
+        "children": [
+          {
+          "title": "【高峰】优待票:儿童/长者/军人票",
+          "children": [
+            {
+            "title": "南昌万达主题乐园优待票（周末）"
+            }
+          ]}
+        ]
+      },
+      {
+        "title": "夜场票"
+      },
+      {
+        "title": "联票"
+      }
+    ]
+  }
+}

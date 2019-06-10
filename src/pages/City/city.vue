@@ -41,7 +41,6 @@ export default {
       }
     },
     cityFilter(data){
-      //console.log(data)
       this.cityCap = data
     }
   },

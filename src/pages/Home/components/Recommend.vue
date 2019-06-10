@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <router-link to="/detail" tag="div" class="container">
     <p class="main-title">热销推荐</p>
     <div class="hot-list border-bottom" v-for="item in recommendList" :key="item.id">
       <img :src="item.imgUrl" alt="">
@@ -9,7 +9,7 @@
         <button>查看详情</button>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
